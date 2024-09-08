@@ -1,0 +1,276 @@
+@import "SHrtBlgStyle_null.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+
+
+@mixin tex_stand($ff, $fw, $fs, $lh, $c) {
+	font-family: $ff;
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	color: $c;
+}
+
+
+body {
+	background-image: url("../images/backgrounds/MainBgrP.png");
+}
+
+header {
+	margin-top: 60px;
+}
+
+footer {
+	background-color: #000000;
+
+	text-align: center;
+	@include tex_stand("Lato", 400, 1em, 1, #8B8B8B);
+
+	.text-1 {
+		padding-top: 55px;
+	}
+
+	.text-2 {
+		padding-top: 20px;
+		padding: 20px 0px 40px 0px;
+	}
+
+	a {
+		color: #8D4FDB;
+	}
+}
+
+
+.wrapper-1 {
+	padding-bottom: 6.5%;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	margin-top: 6%;
+	text-align: center;
+}
+
+.menu {
+	margin: 37px 0 74px 0;
+}
+
+.menu__row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+
+.menu__item {
+	margin-top: 15px;
+
+	@include tex_stand("Montserrat", 400, 1em, 1, #FFFFFF);
+
+	text-transform: uppercase;
+
+	padding: 0px 20px 0px 20px;
+
+	a {
+		color: #FFFFFF;
+	}
+}
+
+.posts__comment {
+	padding: 20% 0px 3.75% 7.5%;
+	background-size: cover;
+}
+
+.posts__comment-1 {
+	background-image: url("../images/backgrounds/BgB1.png");
+}
+
+.posts__comment-2 {
+	background-image: url("../images/backgrounds/BgB2.png");
+}
+
+.posts__comment-3 {
+	background-image: url("../images/backgrounds/BgB3.png");
+}
+
+.posts__item {
+	max-width: 800px;
+}
+
+.posts__text {
+	width: 100%;
+	min-width: 100%;
+	background-color: #FFFFFF;
+	padding: 4.5% 8.5%;
+
+	.text {
+		@include tex_stand("Lato", 400, 1.2em, 1, #000000);
+	}
+
+	.link {
+		padding-top: 1.25%;
+
+		@include tex_stand("Lato", 400, 1.1em, 1, #8D4FDB);
+
+		a {
+			color: #8D4FDB;
+		}
+	}
+}
+
+.posts__propose {
+	padding: 5% 0 7.5% 0;
+
+	background-color: #F1F1F1;
+
+	.text {
+		display: flex;
+		justify-content: center;
+
+
+		@include tex_stand("Montserrat", 400, 1.875em, 1, #333333);
+	}
+
+	.button {
+		margin-top: 25px;
+
+		display: flex;
+		justify-content: center;
+
+
+		button {
+			width: 182px;
+			height: 45px;
+			text-align: center;
+
+			@include tex_stand("Montserrat", 400, 0.625em, 1, #FFFFFF);
+			background-color: #8D4FDB;
+		}
+	}
+}
+
+.comment__description {
+	display: flex;
+
+	.text {
+		margin-left: 1.75%;
+
+		@include tex_stand("Montserrat", 400, 1.125em, 1, #FFFFFF);
+	}
+}
+
+.comment__text {
+	width: 60%;
+
+	margin-top: 20px;
+	@include tex_stand("Montserrat", 400, 1.75em, 1, #FFFFFF);
+}
+
+
+.features-stories {
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+
+	text-align: center;
+
+	background-color: #FFFFFF;
+	padding-top: 85px;
+}
+
+.features-stories__header {
+	margin-bottom: 15px;
+
+	@include tex_stand("Montserrat", 400, 2.5em, 1, #333333);
+}
+
+.features-stories__paragraph {
+	@include tex_stand("Lato", 400, 1.4375em, 1, #A9AFB3);
+}
+
+/* background-image: url("../images/backgrounds/SP1.png");
+ */
+
+.short-posts-main {
+	background-color: #FFFFFF;
+}
+
+.short-posts__footer {
+	margin-top: 56px;
+	padding-bottom: 80px;
+
+	text-align: center;
+
+	.text {
+		p {
+			@include tex_stand("Lato", 400, 1.1em, 1, #333333);
+		}
+
+		a {
+			color: #8D4FDB;
+		}
+	}
+}
+
+.short-posts {
+	width: 62%;
+}
+
+.short-posts__row {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.short-posts__item {
+	max-width: 300px;
+
+	margin-top: 50px;
+
+	.description {
+		display: flex;
+
+		padding: 131px 0px 20px 24px;
+		background-size: cover;
+	}
+
+	.description-1 {
+		background-image: url("../images/backgrounds/SP1.png");
+	}
+
+	.description-2 {
+		background-image: url("../images/backgrounds/SP2.png");
+	}
+
+	.description-3 {
+		background-image: url("../images/backgrounds/SP3.png");
+	}
+
+	.description__text {
+		@include tex_stand("Montserrat", 400, 1em, 1, #FFFFFF); 
+	}
+
+	.text {
+		padding-top: 23px;
+		@include tex_stand("Montserrat", 400, 1.125em, 1, #000000); 
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper-1 {
+		padding-bottom: 0%;
+	}
+}
+
+@media screen and (max-width: 912px) {
+	.wrapper-1 {
+		padding-bottom: 0%;
+	}
+}

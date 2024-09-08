@@ -1,0 +1,970 @@
+@import "NatExStyle_null.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+$Norm: 400;
+$Bold: 700;
+
+@mixin tex_stand($ff, $fs, $lh) {
+	font-family: $ff;
+	font-size: $fs;
+	line-height: $lh;
+}
+
+@mixin benef_tx($d, $ps, $mt) {
+	display: $d;
+	position: $ps;
+	margin-top: $mt;
+}
+
+// 1440px
+header {
+	padding-top: 29px;
+	padding-bottom: 30px;
+
+	ul {
+
+		display: inline-block;
+
+		li {
+
+			display: inline-block;
+
+			margin-right: 50px;
+
+			font-weight: $Bold;
+
+			@include tex_stand('Raleway', 14px, 20px);
+
+			letter-spacing: 0em;
+			text-align: left;
+			color: #214E41;
+		}
+	}
+
+	ul:first-child {
+		margin-left: 400px;
+	}
+
+	button {
+		width: 137px;
+		height: 40px;
+		margin-left: 83.53px;
+
+		font-weight: $Bold;
+		border-radius: 6px;
+
+		@include tex_stand('Raleway', 14px, 20px);
+
+		background-color: #43806C;
+
+		color: white;
+	}
+}
+
+.present-find {
+	width: 100%;
+	height: 720px;
+
+	background: url("../../images/PrF.png");
+
+	.present-find__srch_inf {
+		position: absolute;
+
+		margin-top: 161px;
+		margin-left: 120px;
+
+		width: 518px;
+
+		h1 {
+
+			font-weight: $Bold;
+
+			@include tex_stand('Roboto', 36px, 46px);
+
+			color: #214E41;
+		}
+
+		p {
+			display: block;
+
+			margin-top: 40px;
+			font-weight: $Bold;
+
+			@include tex_stand('Raleway', 16px, 24px);
+		}
+
+		form {
+			display: block;
+			::-webkit-input-placeholder {
+				color: #222222;
+			}
+
+			/* For input text*/
+			INPUT[type="text"] {
+				color: #222222;
+			}
+
+			input:first-child {
+				height: 60px;
+
+				padding: 20px 88px 20px 20px;
+				border-radius: 6px 0px 0px 6px;
+			}
+
+			input:last-child {
+				position: relative;
+
+				bottom: 2px;
+				right: 5px;
+
+
+				height: 60px;
+
+				padding: 20px 35px 20px 35px;
+				border-radius: 0px 6px 6px 0px;
+
+				@include tex_stand('Raleway', 13px, 20px);
+
+				font-weight: $Bold;
+
+				background-color: #43806C;
+				color: white;
+			}
+
+		}
+	}
+}
+
+.description-1 {
+	display: table;
+	position: relative;
+
+	margin: 0 auto 0 auto;
+	bottom: 100px;
+
+	background-color: white;
+	box-shadow: 4px 4px 4px rgba(232, 230, 230, 0.6);
+	border-radius: 6px;
+
+	ul {
+		display: table;
+		position: relative;
+		top: 52px;
+
+		height: 170px;
+
+		li {
+			display: inline-block;
+			padding: 0 45px 0 45px;
+
+			&:nth-child(1):before {
+
+				@include benef_tx(inline-block, relative, 10px);
+
+				content: url("../../images/icons/ic1.png");
+			}
+
+			&:nth-child(2):before {
+
+				@include benef_tx(inline-block, relative, 10px);
+
+				content: url("../../images/icons/ic2.png");
+			}
+
+			&:nth-child(3):before {
+
+				@include benef_tx(inline-block, relative, 10px);
+
+				content: url("../../images/icons/ic3.png");
+			}
+
+			text {
+
+				display: inline-block;
+				vertical-align: top;
+
+				h5 {
+					@include tex_stand('Raleway', 16px, 24px);
+				}
+
+				@include tex_stand('Raleway', 14px, 20px);
+
+				font-weight: $Norm;
+				color: #214E41;
+			}
+		}
+	}
+}
+
+
+.explain-1 {
+	display: table;
+
+	height: 500px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	.explain-1__text {
+		display: inline-block;
+
+		width: 478px;
+
+		h6 {
+			display: block;
+
+			font-weight: $Norm;
+
+			@include tex_stand('Raleway', 13px, 20px);
+
+			letter-spacing: 0.05px;
+			text-transform: uppercase;
+		
+			color: #43806C;
+		}
+
+		h2 {
+			display: block;
+
+			margin-top: 20px;
+
+			font-weight: $Bold;
+
+			@include tex_stand('Roboto', 36px, 40px);
+
+			color: #214E41;
+		}
+
+		text {
+			display: block;
+
+			margin-top: 34px;
+			font-weight: $Norm;
+
+			@include tex_stand('Raleway', 18px, 30px);
+
+			letter-spacing: 0.02px;
+
+			color: #757575;
+		}
+
+		button {
+			width: 107px;
+			height: 36px;
+
+			text-align: center;
+
+			display: block;
+
+			margin-top: 24px;
+
+			@include tex_stand('Raleway', 18px, 18px);
+
+			font-weight: $Bold;
+			letter-spacing: 0.02px;
+
+			background-color: white;
+			color: #214E41;
+
+		}
+	}
+
+	.diogram {
+		display: inline-block;
+		margin-left: 51px;
+
+		.diogram__diog_text {
+			display: inline-block;
+			width: 224px;
+
+			p {
+				display: block;
+
+				@include tex_stand('Roboto', 70px, 90px);
+
+				font-weight: $Bold;
+
+				color: #214E41;
+			}
+
+			.diog_text__text {
+				@include tex_stand('Raleway', 13px, 22px);
+
+				font-weight: $Bold;
+				letter-spacing: 0.02px;
+
+				color: #214E41;
+			}
+		}
+
+		.diogram__diogram {
+			display: inline-block;
+			position: relative;
+
+			margin-left: 51px;
+			top: 30px;
+
+			.diogram__deductible {
+				display: inline-block;
+
+				vertical-align: bottom;
+			}
+
+			.diogram__annual-max {
+				display: inline-block;
+
+				margin-left: 40px;
+			}
+
+		}
+
+		.diogram__summarize {
+
+			@include tex_stand("Raleway", 13px, 22px);
+
+			font-weight: $Norm;
+			color: #757575;
+		}
+
+		.diogram__money {
+			text-align: center;
+
+			@include tex_stand("Raleway", 13px, 22px);
+
+			font-weight: $Norm;
+			color: #214E41;
+		}
+
+		.diogram__diog_text {
+			position: relative;
+			bottom: 20px;
+		}
+
+		.diogram__name {
+			text-align: center;
+
+			@include tex_stand('Raleway', 13px, 22px);
+
+			font-weight: $Bold;
+			color: #214E41;
+		}
+	}
+}
+
+
+.explain-2 {
+	display: flex;
+
+
+	.explain-2__section-1 {
+		display: inline-block;
+
+		padding: 120px 200px 129px 120px;
+
+		width: 50%;
+		height: 640px;
+		background-color: #E3EEED;
+
+		.section-1__text {
+			width: 345px;
+			@include tex_stand('Roboto', 32px, 42px);
+
+			font-weight: $Norm;
+			color: #43806C;
+
+			.text_big {
+				display: inline;
+
+				font-weight: $Bold;
+				color: #214E41;
+			}
+		}
+	}
+
+
+	.explain-2__section-2 {
+		display: inline-block;
+
+		width: 50%;
+		height: 640px;
+		background-color: #214E41;
+
+		.section-2__texts {
+			padding: 165px 132px 203px 115px;
+
+			@include tex_stand('Raleway', 20px, 34px);
+
+			letter-spacing: 0.02px;
+			font-weight: $Norm;
+			color: white;
+
+			.section-2__text {
+
+			}
+
+			.section-2__text_2 {
+				margin-top: 40px;
+			}
+		}
+	}
+
+	.explain-2__h {
+		padding-bottom: 29px;
+
+		@include tex_stand('Raleway', 13px, 20px);
+
+		text-transform: uppercase;
+
+		font-weight: $Norm;
+		color: #214E41;
+	}
+
+}
+
+
+.explain-3 {
+	display: table;
+
+	margin-top: 120px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.explain-3__texts {
+		display: inline-block;
+		width: 556px;
+
+
+		.explain-3__headers {
+			h5 {
+
+				@include tex_stand('Raleway', 13px, 20px);
+
+				text-transform: uppercase;
+				letter-spacing: 0.05px;
+
+				font-weight: $Bold;
+				color: #43806C;
+
+			}
+
+			h2 {
+				@include tex_stand('Roboto', 36px, 46px);
+
+				font-weight: $Bold;
+				color: #214E41;
+			}
+		}
+
+		.explain-3__text {
+			width: 500px;
+			margin-top: 34px;
+
+			@include tex_stand('Raleway', 18px, 30px);
+
+			font-weight: $Norm;
+			color: #757575;
+		}
+	}
+
+	.explain-3__image {
+		display: inline-block;
+
+		margin-left: 88px;
+		vertical-align: top;
+	}
+}
+
+.explain-4 {
+	display: flex;
+	justify-content: space-around;
+
+	margin-top: 60px;
+
+	ul {
+		li {
+			width: 262px;
+
+			display: inline-block;
+
+			margin-left: 25px;
+			margin-right: 25px;
+
+			vertical-align: top;
+
+			p {
+				@include tex_stand('Roboto', 60px, 78px);
+
+				font-weight: $Bold;
+				color: #F0A446;
+			}
+
+			text {
+				@include tex_stand('Raleway', 13px, 22px);
+
+				letter-spacing: 0.05px;
+
+				font-weight: $Bold;
+				color: #214E41;
+			}
+		}
+	}
+}
+
+
+
+.video-explain {
+	display: table;
+	margin: 117px auto 0 auto;
+
+	.video-explain__image {
+		display: inline-block;
+
+		vertical-align: bottom;
+	}
+
+	.video-explain__textes {
+		width: 545px;
+
+		display: inline-block;
+
+		margin-left: 223px;
+		margin-bottom: 116px;
+
+		.textes__headers {
+			h5 {
+				@include tex_stand('Raleway', 13px, 20px);
+
+				letter-spacing: 0.05px;
+
+				font-weight: 900;
+				color: #43806C;
+			}
+
+			h2 {
+				@include tex_stand('Roboto', 36px, 46px);
+
+				font-weight: $Bold;
+				color: #214E41;
+			}
+		}
+
+		.textes__text {
+			text {
+				@include tex_stand('Raleway', 18px, 30px);
+
+				letter-spacing: 0.02px;
+
+				font-weight: $Norm;
+				color: #757575;
+			}
+		}
+
+		.video-explain__button {
+			margin-top: 24px;
+
+			button {
+				@include tex_stand('Raleway', 18px, 18px);
+
+				letter-spacing: 0.02px;
+
+				font-weight: $Bold;
+
+				text-decoration-line: underline;
+				text-decoration-style: solid;
+				text-decoration-color: #214E41;
+
+				background-color: white;
+
+				color: #214E41;
+			}
+		}
+	}
+}
+
+.employer-explain {
+	width: 100%;
+	height: 522px;
+
+	background: url('../../images/EE.png');
+
+	.employer-explain__textes {
+		width: 491px;
+
+		padding-top: 126px;
+		margin-left: 120px;
+
+		.textes__headers {
+			h5 {
+				@include tex_stand('Raleway', 13px, 20px);
+
+				text-transform: uppercase;
+				letter-spacing: 0.05px;
+
+				font-weight: 900;
+				color: #43806C;
+			}
+
+			h2 {
+				@include tex_stand('Roboto', 36px, 46px);
+
+				font-weight: $Bold;
+				color: #214E41;
+			}
+		}
+
+		.textes__text {
+			margin-top: 34px;
+
+
+			text {
+				@include tex_stand('Raleway', 18px, 30px);
+
+				letter-spacing: 0.02px;
+
+				font-weight: $Norm;
+				color: #757575;
+			}
+
+			.employer-explain__button {
+				margin-top: 24px;
+
+				button {
+					@include tex_stand('Raleway', 18px, 18px);
+
+					letter-spacing: 0.02px;
+
+					font-weight: $Bold;
+
+					text-decoration-line: underline;
+					text-decoration-style: solid;
+					text-decoration-color: #214E41;
+
+					background-color: rgb(0, 0, 0, 0);
+
+					color: #214E41;
+				}
+			}
+		}
+	}
+}
+
+
+
+.backing {
+	margin-top: 120px;
+	padding-bottom: 125px;
+
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(199, 199, 199, 0.37);
+
+
+	.backing__header {
+		h2 {
+			@include tex_stand('Roboto', 36px, 46px);
+
+			font-weight: $Bold;
+			color: #214E41;
+
+			text-align: center;
+		}
+	}
+	.backing__backers {
+		margin-top: 115px;
+
+		ul {
+			display: flex;
+			justify-content: space-around;
+			li {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+
+.explain-5 {
+	margin-top: 120px;
+
+	.explain-5__blocks {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+
+		ul {
+			li {
+				width: 395px;
+
+				display: inline-block;
+				vertical-align: top;
+
+				padding-left: 20px;
+				padding-right: 20px;
+
+				.blocks__image {
+
+				}
+
+				.blocks__text {
+					.text__header {
+						h5 {
+							@include tex_stand('Raleway', 11px, 18px);
+
+							text-transform: uppercase;
+							letter-spacing: 0.05px;
+
+							font-weight: $Norm;
+							color: #43806C;
+						}
+					}
+
+					text {
+						@include tex_stand('Roboto', 20px, 26px);
+
+						font-weight: $Bold;
+						color: #214E41;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.ready {
+	display: flex;
+
+	margin-top: 146px;
+
+	.ready__image {
+
+	}
+
+	.ready__textes {
+		width: 53%;
+		background-color: #E3EEED;
+
+		padding-top: 144px;
+		padding-left: 120px;
+
+		.textes__text {
+			width: 423px;
+
+			.text-1 {
+				@include tex_stand('Roboto', 36px, 46px);
+
+				font-weight: $Bold;
+				color: #214E41;
+			}
+
+			.text-2 {
+				margin-top: 46px;
+				@include tex_stand('Roboto', 36px, 46px);
+
+				font-weight: $Bold;
+				color: #214E41;
+			}
+		}
+	}
+
+	.ready__button {
+		margin-top: 60px;
+		button {
+			@include tex_stand('Raleway', 13px, 21px);
+
+			padding: 13px 24px 13px 24px;
+			letter-spacing: 0.02px; 
+
+			font-weight: $Bold;
+			border-radius: 6px;
+
+			background-color: #43806C;
+			color: white;
+		}	
+	}
+}
+
+
+
+footer {
+	width: 100%;
+	height: 778px;
+
+	background-color: #214E41;
+	color: white;
+
+	.footer__content {
+		padding-top: 100px;
+		padding-left: 120px;
+		padding-right: 124px;
+
+		.content__interact {
+			.logo {
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.interact__join-brella {
+				display: inline-block;
+			}
+
+			.interact__company {
+				display: inline-block;
+			}
+
+			.interact__register {
+				width: 360px;
+				display: inline-block;
+
+				margin-left: 370px;
+
+				vertical-align: top;
+
+				.register__register {
+
+
+					::-webkit-input-placeholder {
+						color: white;
+					}
+
+					INPUT[type="submit"] {
+						width: 53px;
+						height: 52px;
+
+						position: relative;
+						top: 21px;
+						right: 3.5px;
+		
+					}
+
+					INPUT[type="text"] {
+						width: 301px;
+						height: 52px;
+
+						@include tex_stand('Raleway', 14px, 24px);
+
+						letter-spacing: 0.02px;
+						font-weight: $Norm;
+
+						padding: 18px 10px 18px 10px;
+
+						border: 1px solid white;
+
+						background-color: #214E41;
+					}
+				}
+
+				.register__textes {
+					
+
+
+					.textes__header {
+
+						text-transform: uppercase;
+
+						font-size: 14px;
+					}
+
+					.textes__text {
+						margin-top: 19px;
+
+					}
+				}
+
+				.register__text {
+					@include tex_stand('Raleway', 13px, 24px);
+
+					letter-spacing: 0.02px;
+
+					font-weight: $Norm;
+					color: white;
+				}
+
+				.register__register {
+					.register__icon {
+						position: relative;
+
+						left: 318.5px;
+						bottom: 32.5px;
+					}
+
+					.register__soc_net {
+						ul {
+							li {
+								display: inline-block;
+								position: relative;
+
+								vertical-align: top;
+
+								padding-left: 20px;
+
+								right: 48px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.content__line {
+			width: 100%;
+			height: 1px;
+
+			background-color: white;
+
+			margin-top: 80px;
+		}
+
+		.content__info {
+			width: 1194px;
+			display: table;
+
+			margin: 73.14px auto 0 auto;
+
+
+			.info__text {
+				@include tex_stand('Raleway', 14px, 24px);
+
+				letter-spacing: 0.02px;
+				font-weight: $Norm;
+				color: white;
+
+				margin-top: 20px;
+			}
+
+			.info__last-texts {
+				.info__last-text-1 {
+					display: inline-block;
+				}
+
+				.info__last-text-2 {
+					display: inline-block;
+					margin-left: 707px;
+				}
+			}
+		}
+	}
+
+	.footer__menu {
+		margin-left: 115px;
+		ul {
+			li {
+				h5 {
+					@include tex_stand('Raleway', 13px, 24px);
+
+					text-transform: uppercase;
+					letter-spacing: 0.02px;
+
+					font-weight: $Bold;
+					color: white;
+				}
+				margin-bottom: 15px;
+
+				@include tex_stand('Raleway', 16px, 27px);
+
+				font-weight: $Norm;
+				color: white;
+			}
+		}
+	}
+}
